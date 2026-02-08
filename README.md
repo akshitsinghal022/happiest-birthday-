@@ -1,1 +1,259 @@
-# happiest-birthday-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Muskuuu 🌸</title>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@300;600;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --baby-pink: #fdf2f5;
+            --soft-pink: #f8bbd0;
+            --deep-pink: #ec407a;
+            --gold: #d4af37;
+        }
+
+        body, html {
+            margin: 0;
+            padding: 0;
+            background-color: var(--baby-pink);
+            font-family: 'Montserrat', sans-serif;
+            color: #4a4a4a;
+            overflow-x: hidden;
+            scroll-behavior: smooth;
+        }
+
+        /* Cute Gesture: Opening Envelope */
+        #cover {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: radial-gradient(circle, #fff 0%, #fce4ec 100%);
+            z-index: 100;
+            position: relative;
+        }
+
+        .envelope {
+            font-size: 5rem;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+
+        .envelope:hover {
+            transform: scale(1.1) rotate(-5deg);
+        }
+
+        /* Main Content */
+        .main-content {
+            display: none; /* Hidden until envelope is clicked */
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-family: 'Great Vibes', cursive;
+            font-size: 5rem;
+            color: var(--deep-pink);
+            margin: 40px 0;
+            text-shadow: 2px 2px 5px rgba(0,0,0,0.05);
+        }
+
+        /* The Special Wish */
+        .wish-card {
+            max-width: 700px;
+            margin: 0 auto;
+            background: white;
+            padding: 50px;
+            border-radius: 50px;
+            border: 3px dashed var(--soft-pink);
+            box-shadow: 0 15px 35px rgba(236, 64, 122, 0.1);
+        }
+
+        .wish-card h2 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 800;
+            color: var(--deep-pink);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 25px;
+        }
+
+        .wish-card p {
+            font-size: 1.25rem;
+            line-height: 1.8;
+            font-weight: 300;
+        }
+
+        .highlight {
+            font-weight: 600;
+            color: var(--deep-pink);
+        }
+
+        /* Polaroid Gallery */
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            margin: 80px 0;
+        }
+
+        .polaroid {
+            background: white;
+            padding: 15px 15px 40px 15px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+            transform: rotate(-2deg);
+            transition: 0.3s;
+            width: 250px;
+        }
+
+        .polaroid:nth-child(even) { transform: rotate(3deg); }
+
+        .polaroid:hover {
+            transform: rotate(0deg) scale(1.05);
+            z-index: 10;
+        }
+
+        .polaroid img, .polaroid video {
+            width: 100%;
+            height: 350px;
+            object-fit: cover;
+        }
+
+        .polaroid p {
+            font-family: 'Great Vibes', cursive;
+            font-size: 1.5rem;
+            margin-top: 15px;
+            color: #555;
+        }
+
+        /* Falling Petals Animation */
+        .petal {
+            position: fixed;
+            top: -10%;
+            color: #ffc0cb;
+            user-select: none;
+            z-index: 999;
+            pointer-events: none;
+            animation: fall linear infinite;
+        }
+
+        @keyframes fall {
+            to { transform: translateY(120vh) rotate(360deg); }
+        }
+
+    </style>
+</head>
+<body>
+
+    <div id="cover">
+        <div class="envelope" onclick="openMessage()">💌</div>
+        <p style="color: var(--deep-pink); font-weight: 600;">oyiii cutieee, zraa yha click toh kr!🌚</p>
+    </div>
+
+    <div class="main-content" id="main">
+        <header>
+            <h1>Happy Birthday, Muskaan!</h1>
+        </header>
+
+        <div class="wish-card">
+            <h2>A Special Message for You</h2>
+            <p>
+                <span class="highlight">Muskaan</span> <span style="serif: your name literally means <strong>"Smile,"</strong> and that is exactly what you bring into this world every single day. 
+                <br><br>
+                On your special day, I wish that your life is as beautiful and vibrant as a garden in full bloom. May you achieve every dream you chase, find joy in the little things, and always stay as wonderful as you are."</span>
+                <br><br>
+                <span style="font-family: 'Great Vibes'; font-size: 2.5rem; color: var(--deep-pink);">Keep shining, keep smiling!</span>
+            </p>
+        </div>
+
+        <div class="gallery">
+            <div class="polaroid">
+                <img src="file:///D:/birthday/photo1.jpg.JPG">
+                <p>The Prettiest Smile</p>
+            </div>
+
+            <div class="polaroid" style="width: 300px;">
+                <video autoplay muted loop playsinline>
+                      <source src="file:///D:/birthday/1.mp4" type="video/mp4">
+                  
+                </video>
+                <p>🦋 </p>
+            </div>
+ 
+        <div class="polaroid" style="width: 300px;">
+                <video autoplay muted loop playsinline>
+                    <source src="file:///D:/birthday/9.mp4" type="video/mp4">
+
+                  
+                </video>
+                <p> 🐣</p>
+            </div>
+          
+              <div class="polaroid" style="width: 300px;">
+                <video autoplay muted loop playsinline>
+                    <source src="file:///D:/birthday/8.mp4" type="video/mp4">
+ 
+                  
+                </video>
+                <p> 🐡</p>
+            </div>
+
+
+
+            <div class="polaroid">
+                <img src="file:///D:/birthday/6.jpg".jpg.JPG">
+                <p>Stunning as Always</p>
+            </div>
+ 
+                <div class="polaroid" style="width: 300px;">
+                <video autoplay muted loop playsinline>
+                    <source src="file:///D:/birthday/5.mp4" type="video/mp4">
+ 
+                  
+                </video>
+                <p>👻</p>
+            </div>
+
+
+            <div class="polaroid">
+                <img src="file:///D:/birthday/photo2.jpg.JPG">
+                <p>cutu</p>
+
+            </div>
+      <audio id="bg-music" loop>
+    <source src="music.mp3" type="audio/mpeg">
+</audio>
+        </div>
+
+        <footer style="margin-bottom: 50px; opacity: 0.6;">
+            <p>happiest birthday special person🦋🎀 </p>
+        </footer>
+    </div>
+
+    <script>
+        function openMessage() {
+            document.getElementById('cover').style.display = 'none';
+            document.getElementById('main').style.display = 'block';
+            startPetals();
+        }
+
+        function startPetals() {
+            const symbols = ['🫧', '💗', '🎂', '❄️','⭐️'];
+            setInterval(() => {
+                const petal = document.createElement('div');
+                petal.classList.add('petal');
+                petal.innerHTML = symbols[Math.floor(Math.random() * symbols.length)];
+                petal.style.left = Math.random() * 100 + 'vw';
+                petal.style.animationDuration = (Math.random() * 3 + 2) + 's';
+                petal.style.fontSize = Math.random() * 20 + 10 + 'px';
+                document.body.appendChild(petal);
+                
+                setTimeout(() => { petal.remove(); }, 5000);
+            }, 300);
+        }
+    </script>
+</body>
+</html>
